@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6a5ulWQ8pKYP1hqYaGgHbHxIvYCysl3o2IALfL0ZomUouMjNb9ahlzRMmZ2JF3dCfOHuKagOP0YsYDS1h6/jlQ==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\MinimalApi-net6\\MinimalApi-net6\\MinimalApi-net6.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Henrique\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
+  ],
+  "logs": []
+}
