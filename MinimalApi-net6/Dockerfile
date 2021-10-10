@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /application
 
 # Copy csproj and restore as distinct layers
-COPY *.csproj ./
+COPY MinimalApi-net6.csproj ./
 RUN dotnet restore
 
 # Copy everythink else and build
@@ -13,4 +13,4 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /application
 COPY --from=build /application/out .
-ENTRYPOINT [ "dotnet", "MinimalApi-net6.dll" ]
+CMD ASPNETCORE_URLS="http://*:$PORT" dotnet MinimalApi-net6.dll
